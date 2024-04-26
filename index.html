@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style1.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div class="container" id="main">
+        <div class="sign-up">
+            <form action="#">
+                <h1>
+                    SignUp
+                </h1>
+                <p>Register and plan ev trips with us in a click! </p>
+                <input type="text" name="txt" placeholder="USERNAME" required="">
+                <input type="email" name="txt" placeholder="Email"required="">
+                <input type="text" name="txt" placeholder="Phone No:"required="" >
+                <input type="password" placeholder="Password"required="">
+                <input type="password" placeholder="Re-Password"required="">
+                <button>
+                    SIGN-UP
+                </button>
+                <div class="social-container">
+                    <p>Or Sign Up using social platform </p>
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+               
+            </form>
+        </div>
+        <div class="sign-in">
+            <form action="#">
+                <h1>
+                   Login 
+                </h1>
+                <div class="social-container">
+                    <p>Or Sign in using social platform </p>
+                    <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="social"><i class="fa fa-google"></i></a>
+                    <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
+                </div>
+                <p>Register and plan ev trips with us in a click! </p>
+                <input type="text" name="txt" placeholder="USERNAME" required="">
+                <input type="email" name="txt" placeholder="Email"required="">
+                <input type="password" placeholder="Password"required="">
+                <a href="#">Forgot Password</a>
+                <button>
+                    Login
+                </button>
+               
+               
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-left">
+                    <h1>
+                        Already a member?
+                    </h1>
+                    <p>To keep connected with us login with your personal informations</p>
+                    <button id="signIn">Login</button>
+                </div>
+                <div class="overlay-right">
+                    <h1>
+                        Not a member Yet?
+                    </h1>
+                    <p>Enter your personal informations and start planning trips with us.</p>
+                    <button id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    const signUpbutton = document.getElementById('signUp');
+    const signInbutton = document.getElementById('signIn');
+    const main = document.getElementById('main');
+
+    signUpbutton.addEventListener('click',() =>{
+        main.classList.add("right-panel-active");
+    })
+    signInbutton.addEventListener('click',() =>{
+        main.classList.remove("right-panel-active");
+    })
+    </script>
+</body>
+</html>
